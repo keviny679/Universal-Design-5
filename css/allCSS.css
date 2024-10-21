@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Making headers serif font and paragraphs sans-serif font */
+h1, h2, h3 {  
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h1 {
+    line-height: 100px;
+}
+p {
+    font-family: "Lato", sans-serif;
+    line-height: 1.7em;
+    margin-bottom: 1.9em;
+    font-size: 1.2em;
+}
+
+/* table css */
+td {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+}
+
+caption {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-links {
+    margin-bottom: 1.9em;
+    font-size: 1em;
+}
+/* Skip Link */
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: translateY(-100%);
+}
+
+.skip-link {
+    transition: transform 0.3s;
+}
+
+/* sets whole page to the following */
+* {
+    max-width: 100ch;
+    margin: 0 auto;
+}
+
+/* forms css */
+.input:focus {
+    background:black;
+    color: white;
+    border: 4px;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+/* sr-only */
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+  }
